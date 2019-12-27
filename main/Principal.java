@@ -9,7 +9,9 @@ public class Principal {
 
     public static void main(String[] args) {
 
-        System.out.println("Hola mundo");
+        Estudiante estudiante = new Estudiante("Luis david", "De hoyos", 2333);
+        System.out.println(estudiante);
+
 
 
     }

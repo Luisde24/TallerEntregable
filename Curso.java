@@ -48,4 +48,12 @@ public class Curso {
     }
 
 
+    public String toString() {
+        return "Curso{" +
+                "codigoDelCurso='" + codigoDelCurso + '\'' +
+                ", nombreCurso='" + nombreCurso + '\'' +
+                ", creditos=" + creditos +
+                ", nota=" + nota +
+                '}';
+    }
 }

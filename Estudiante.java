@@ -9,7 +9,7 @@ public class Estudiante {
     //atributos encapsulado
     private String nombre;
     private String apellido;
-    private String codigo;
+    private int codigo;
     private Curso Curso1;
     private Curso Curso2;
     private Curso Curso3;
@@ -18,8 +18,12 @@ public class Estudiante {
     private Curso[] cursos;
 
 
-    public Estudiante(String nombre, String apellido, String codigo) {
+    public Estudiante(String nombre, String apellido, int codigo) {
 
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.codigo = codigo;
+        Curso [] cursos = new Curso[5];
     }
 
     public String getNombre() {
@@ -30,7 +34,7 @@ public class Estudiante {
         return apellido;
     }
 
-    public String getCodigo() {
+    public int getCodigo() {
         return codigo;
     }
 
@@ -89,4 +93,18 @@ public class Estudiante {
 
     }
 
+
+    public String toString() {
+        return "Estudiante{" +
+                "nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", codigo=" + codigo +
+                ", Curso1=" + Curso1 +
+                ", Curso2=" + Curso2 +
+                ", Curso3=" + Curso3 +
+                ", Curso4=" + Curso4 +
+                ", Curso5=" + Curso5 +
+                ", cursos=" + Arrays.toString(cursos) +
+                '}';
+    }
 }
