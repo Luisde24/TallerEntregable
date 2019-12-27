@@ -33,7 +33,7 @@ public class Curso {
     }
     public String getDescripcion()
     {
-       return "";
+       return "valor retornado";
     }
 
     public String getCodigoDelCurso() {

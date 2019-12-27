@@ -80,7 +80,7 @@ public class Estudiante {
     }
 
     public boolean tieneCursosCompletos(String codigoCurso) {
-        return true;
+        return false;
     }
 
     public Curso BuscarCurso(String codigoCurso) {
